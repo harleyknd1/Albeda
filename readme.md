@@ -1,3 +1,5 @@
 #Albeda
 
-School opdrachten, repository is bijna volledig in het Nederlands.
+School opdrachten, repository is in het Nederlands.
+
+College assignments, repository is in Dutch.
