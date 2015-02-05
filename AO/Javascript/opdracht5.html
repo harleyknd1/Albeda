@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Opdracht 5</title>
+        <script language="javascript">
+            function askNumber(){
+                number1 = parseFloat(document.form.box.value); 
+                if(number1 < 100){
+                    window.document.bgColor="orange"
+                    alert("Je getal is: " + number1)                   
+                }else if(number1 > 100 && number1 <= 500){
+                    window.document.bgColor="green"
+                    alert("Het getal " + number1 + " is te hoog!")                 
+                }else if(number1 == 100){
+                    window.document.bgColor="red"
+                    alert("Bingo!")                   
+                }else{
+                    window.document.bgColor="blue"
+                    alert("Je moet een lager getal opgeven!")
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="form" method="post" action="">
+            <input type="text" name="box" id="box">
+            <input type="button" name="ask" id="ask" value="=" onclick="askNumber()">
+        </form>
+    </body>
+</html>
