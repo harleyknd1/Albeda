@@ -1,10 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Opdracht 5</title>
+        <title>Opdracht 4</title>
         <script language="javascript">
+            function addition() {
+                var number1, number2, result;
+                number1 = parseFloat(document.form.number1.value);
+                number2 = parseFloat(document.form.number2.value);
+                result = number1 + number2;
+                alert("Het resultaat is: " + result);
+                document.form.answer.value = result;
+                askNumber();
+            }
+            function subtraction() {
+                var number1, number2, result;
+                number1 = parseFloat(document.form.number1.value);
+                number2 = parseFloat(document.form.number2.value);
+                result = number1 - number2;
+                document.form.answer.value = result;
+                askNumber();
+            }
+            function multiplication() {
+                var number1, number2, result;
+                number1 = parseFloat(document.form.number1.value);
+                number2 = parseFloat(document.form.number2.value);
+                result = number1 * number2;
+                document.form.answer.value = result;
+                askNumber();
+            }
+            function division() {
+                var number1, number2, result;
+                number1 = parseFloat(document.form.number1.value);
+                number2 = parseFloat(document.form.number2.value);
+                result = number1 / number2;
+                document.form.answer.value = result;
+                askNumber();
+            }
             function askNumber(){
-                number1 = parseFloat(document.form.box.value); 
+                number1 = parseFloat(document.form.answer.value); 
                 if(number1 < 100){
                     window.document.bgColor="orange"
                     alert("Je getal is: " + number1)                   
@@ -23,8 +56,19 @@
     </head>
     <body>
         <form name="form" method="post" action="">
-            <input type="text" name="box" id="box">
-            <input type="button" name="ask" id="ask" value="=" onclick="askNumber()">
+            <table>
+                <tr>
+                    <td><input type="text" name="number1" id="number1"></td>
+                    <td>&</td>
+                    <td><input type="text" name="number2" id="number2"></td>
+                    <td>=</td>
+                    <td><input type="text" name="answer" id="answer"></td>
+                    <td><input type="button" name="plus" id="plus" value="+" onClick="addition();"></td>
+                    <td><input type="button" name="plus" id="plus" value="-" onClick="subtraction();"></td>
+                    <td><input type="button" name="plus" id="plus" value="*" onClick="multiplication();"></td>
+                    <td><input type="button" name="plus" id="plus" value="/" onClick="division();"></td>
+                </tr>
+            </table>
         </form>
     </body>
 </html>
