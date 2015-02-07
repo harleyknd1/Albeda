@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Opdracht 6b</title>
+        <script>
+           function whilePractice(){
+               i = 0;
+               x = 0;
+               y = 0;
+               while(i < 10){
+                   x = parseInt(prompt("Voer hier een getal in: " + "De teller staat op "
+                           + i + "/10"));
+                   y = x + y;
+                   i++;
+               }
+               alert("Het opgetelde resultaat: " + y)
+           }
+        </script>
+    </head>
+    <body>
+       <input type="button" value="While Loop" onClick="whilePractice()">
+    </body>
+</html>
