@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
     <head>
         <title>Opdracht 6a</title>
@@ -7,22 +6,22 @@
                 leeftijd = prompt("Voer hier uw leeftijd in: ");
                 while(leeftijd !== null){
                     if(leeftijd == 18){
-                        alert("Je bent net volwassen geworden, gefeliciteerd.");
+                        alert("Je bent net volwassen geworden, gefeliciteerd");
                         break;
                     }else if(leeftijd > 18){
-                        alert("Je bent een volwassen persoon.");
+                        alert("Je bent een volwassen persoon");
                         break;
                     }else if(leeftijd > 0 && leeftijd < 18){
-                        alert("Je bent nog een kind.");
+                        alert("Je bent nog een kind");
                         break;
                     }else
-                        alert("Voer je leeftijd in.");
+                        alert("Voer je leeftijd in");
                         vraagLeeftijd();
                     }
                 }
         </script>
     </head>
     <body>
-        <a href="http://www.google.nl" onclick="vraagLeeftijd()">Google</a>
+        <input type="button" value="Start" onclick="vraagLeeftijd()" />
     </body>
 </html>
